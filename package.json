@@ -1,5 +1,5 @@
 {
-  "name": "@sdev09/getrandom",
+  "name": "@sdev09/get-random",
   "version": "1.0.0",
   "description": " generate any random number or string by giving length ",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "url": "https://github.com/sDEV-eloper/getRandom.git"
   },
   
-  "keywords": ["random", "get_random", "generate-random"],
+  "keywords": ["random", "get_random", "generate-random", "get-random-number", "random-number", "random-string"],
   "author": "suraj dev",
   "license": "ISC"
 }
