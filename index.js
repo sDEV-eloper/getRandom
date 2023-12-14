@@ -1,4 +1,4 @@
-// Utility function to generate a random integer within a range
+
 const getRandomInteger = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const getRandomString = (length, characters) => {
@@ -10,13 +10,15 @@ const getRandomString = (length, characters) => {
   return randomString;
 };
 
-export const randomNumber = (n) => getRandomInteger(10 ** (n - 1), 10 ** n - 1);
-export const randomNumberRange = (a, b) => getRandomInteger(a,b);
-export const randomMixString = (length) => getRandomString(length, 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz');
-export const randomMixNumString = (length) => getRandomString(length, 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789');
-export const randomCapitalString = (length) => getRandomString(length, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
-export const randomSmallString = (length) => getRandomString(length, 'abcdefghijklmnopqrstuvwxyz');
-export const randomAllMixString = (length) => {
+ const randomNumber = (n) => getRandomInteger(10 ** (n - 1), 10 ** n - 1);
+ const randomNumberRange = (a, b) => getRandomInteger(a,b);
+ const randomMixString = (length) => getRandomString(length, 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz');
+ const randomMixNumString = (length) => getRandomString(length, 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789');
+ const randomCapitalString = (length) => getRandomString(length, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+ const randomSmallString = (length) => getRandomString(length, 'abcdefghijklmnopqrstuvwxyz');
+const randomAllMixString = (length) => {
     const specialCharacters = '!@#$%^&*()-_=+[]{}|;:,.<>?';
     return getRandomString(length, 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789' + specialCharacters);
   };
+
+  module.exports={randomAllMixString, randomCapitalString, randomMixNumString, randomNumber, randomSmallString, randomCapitalString, randomNumberRange}
