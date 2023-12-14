@@ -1,6 +1,6 @@
 {
   "name": "@sdev09/get-random",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": " generate any random number or string by giving length ",
   "main": "index.js",
 
